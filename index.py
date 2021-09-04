@@ -15,7 +15,7 @@ def index():
     return render_template("stran.html")
 
 @app.route("/prvic")
-def garaža1():
+def garaza1():
     GPIO.output(7, GPIO.LOW)
     time.sleep(1)
     GPIO.output(7, GPIO.HIGH)
@@ -24,7 +24,7 @@ def garaža1():
 
 
 @app.route("/drugic")
-def garaža2():
+def garaza2():
     GPIO.output(7, GPIO.LOW)
     time.sleep(1)
     GPIO.output(7, GPIO.HIGH)
