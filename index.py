@@ -19,7 +19,8 @@ def garaza1():
     GPIO.output(7, GPIO.LOW)
     time.sleep(1)
     GPIO.output(7, GPIO.HIGH)
-    time.sleep(2)
+    time.sleep(1)
+    GPIO.output(7, GPIO.LOW)
     return render_template("stran1.html")
 
 
@@ -28,7 +29,8 @@ def garaza2():
     GPIO.output(7, GPIO.LOW)
     time.sleep(1)
     GPIO.output(7, GPIO.HIGH)
-    time.sleep(2)
+    time.sleep(1)
+    GPIO.output(7, GPIO.LOW)
     return render_template("stran2.html")
 
 if __name__ == '__main__':
